@@ -17,12 +17,18 @@ export default function FullWidthTextField() {
   return (
     <Box
       sx={{
-        width: 500,
-        maxWidth: "100%",
+        paddingTop: 1,
+        paddingRight: 0.25,
+        paddingLeft: 0.25,
+        paddingBottom: 0.25,
       }}
     >
       <TextField
         label="Wyszukaj"
+        fullWidth
+        sx={{
+          width: "100%",
+        }}
         InputProps={{
           endAdornment: (
             <InputAdornment>
